@@ -98,7 +98,7 @@ bool parseTitle(const string& html, string* title)
 // 基于离线文档路径进行一个简单的字符串变换即可
 bool parseUrl(const string& path, string* url)
 {
-    string head = "https://www.boost.org/doc/libs/1_53_0/doc/";
+    string head = "https://www.boost.org/doc/libs/1_53_0/doc";
     string tail = path.substr(g_input_path.size());
     *url = head + tail;
     return true;
